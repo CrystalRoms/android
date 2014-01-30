@@ -5,6 +5,12 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
 
+  <remote name="THLG"
+           fetch="git://github.com/TeamHackLG/" />
+
+  <remote name="CR"
+           fetch="git://github.com/CrystalRoms/" />
+
   <remote  name="github"
            fetch=".."
            review="review.cyanogenmod.org" />
@@ -272,15 +278,15 @@
   <project path="external/yaffs2" name="CyanogenMod/android_external_yaffs2" groups="pdk" />
   <project path="external/zlib" name="CyanogenMod/android_external_zlib" groups="pdk" />
   <project path="external/zxing" name="CyanogenMod/android_external_zxing" />
-  <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="CyanogenMod/android_frameworks_base" />
+  <project path="frameworks/av" name="CrystalRoms/android_frameworks_av" groups="pdk" />
+  <project path="frameworks/base" name="CrystalRoms/android_frameworks_base" />
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
   <project path="frameworks/ex" name="CyanogenMod/android_frameworks_ex" />
   <project path="frameworks/mff" name="CyanogenMod/android_frameworks_mff" />
   <project path="frameworks/ml" name="CyanogenMod/android_frameworks_ml" />
-  <project path="frameworks/native" name="CyanogenMod/android_frameworks_native" groups="pdk" />
+  <project path="frameworks/native" name="CrystalRoms/android_frameworks_native" groups="pdk" />
   <project path="frameworks/opt/calendar" name="CyanogenMod/android_frameworks_opt_calendar" />
   <project path="frameworks/opt/carddav" name="CyanogenMod/android_frameworks_opt_carddav" />
   <project path="frameworks/opt/colorpicker" name="CyanogenMod/android_frameworks_opt_colorpicker" />
@@ -340,24 +346,18 @@
   <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" />
   <project path="packages/apps/Calculator" name="CyanogenMod/android_packages_apps_Calculator" />
   <project path="packages/apps/Calendar" name="CyanogenMod/android_packages_apps_Calendar" />
-  <project path="packages/apps/Camera2" name="CyanogenMod/android_packages_apps_Camera2" />
+  <project path="packages/apps/Camera2" name="CrystalRoms/android_packages_apps_Camera2" />
   <project path="packages/apps/CellBroadcastReceiver" name="CyanogenMod/android_packages_apps_CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="CyanogenMod/android_packages_apps_CertInstaller" />
-  <project path="packages/apps/CMAccount" name="CyanogenMod/android_packages_apps_CMAccount" />
   <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" />
-  <project path="packages/apps/CMUpdater" name="CyanogenMod/android_packages_apps_CMUpdater" />
-  <project path="packages/apps/CMWallpapers" name="CyanogenMod/android_packages_apps_CMWallpapers" />
   <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" />
   <project path="packages/apps/ContactsCommon" name="CyanogenMod/android_packages_apps_ContactsCommon" />
   <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" />
   <project path="packages/apps/Dialer" name="CyanogenMod/android_packages_apps_Dialer" />
   <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" />
   <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
-  <project path="packages/apps/Exchange" name="CyanogenMod/android_packages_apps_Exchange" />
-  <project path="packages/apps/Gallery2" name="CyanogenMod/android_packages_apps_Gallery2" />
-  <project path="packages/apps/HTMLViewer" name="CyanogenMod/android_packages_apps_HTMLViewer" />
+  <project path="packages/apps/Gallery2" name="CrystalRoms/android_packages_apps_Gallery2" />
   <project path="packages/apps/InCallUI" name="CyanogenMod/android_packages_apps_InCallUI" />
-  <project path="packages/apps/KeyChain" name="CyanogenMod/android_packages_apps_KeyChain" />
   <project path="packages/apps/Launcher3" name="CyanogenMod/android_packages_apps_Launcher3" />
   <project path="packages/apps/LockClock" name="CyanogenMod/android_packages_apps_LockClock" />
   <project path="packages/apps/Mms" name="CyanogenMod/android_packages_apps_Mms" />
@@ -367,7 +367,7 @@
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" />
   <project path="packages/apps/QuickSearchBox" name="CyanogenMod/android_packages_apps_QuickSearchBox" />
-  <project path="packages/apps/Settings" name="CyanogenMod/android_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="CrystalRoms/android_packages_apps_Settings" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" />
   <project path="packages/apps/SpeechRecorder" name="CyanogenMod/android_packages_apps_SpeechRecorder" />
@@ -468,6 +468,11 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.2_r1" />
   <project path="vendor/cm" name="CyanogenMod/android_vendor_cm" />
+  <project path="vendor/lge" name="proprietary_vendor_lge" revision="cm-11.0" remote="THLG"/>
+  <project path="device/lge/e610" name="android_device_lge_e610" revision="cm-11.0" remote="THLG"/>
+  <project path="device/lge/p700" name="android_device_lge_p700" revision="cm-11.0" remote="CR"/>
+  <project path="device/lge/msm7x27a-common" name="android_device_lge_msm7x27a-common" revision="cm-11.0" remote="CR"/>
+  <project path="kernel/lge/msm7x27a-common" name="lge-kernel-lproj" revision="android-msm-3.4-kk" remote="THLG"/>
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />
   <project path="vendor/tmobile/apps/ThemeChooser" name="CyanogenMod/themes-platform-vendor-tmobile-apps-ThemeChooser" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
